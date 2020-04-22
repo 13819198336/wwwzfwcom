@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
    return bcrypt('admin');
 });
+
+//定义好后台自定义分层文件的路由
+include base_path('routes/admin/admin.php');
