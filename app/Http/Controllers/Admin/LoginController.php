@@ -8,6 +8,13 @@ use Auth;
 
 class LoginController extends Controller
 {
+    //构造方法
+    public function __construct()
+    {
+        //$this->middleware(['check_admin:login']);
+    }
+
+
     //登录显示
     public function index()
     {
